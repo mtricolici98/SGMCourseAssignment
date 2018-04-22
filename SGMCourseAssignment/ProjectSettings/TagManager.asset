@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - GameField
+  - Player1
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - fieldLayer
+  - PlayerLayer
+  - backGroudLayer
   - 
   - 
   - 
@@ -40,4 +42,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: PlayerLayer
+    uniqueID: 1540106599
+    locked: 0
+  - name: fieldLayer
+    uniqueID: 2796879747
+    locked: 0
+  - name: BackGroundLayer
+    uniqueID: 2733964325
     locked: 0
