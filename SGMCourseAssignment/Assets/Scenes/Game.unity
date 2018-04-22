@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 56542141}
   - component: {fileID: 56542144}
   - component: {fileID: 56542145}
+  - component: {fileID: 56542146}
   m_Layer: 9
   m_Name: frame-1
   m_TagString: Player1
@@ -150,7 +151,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!212 &56542142
 SpriteRenderer:
@@ -222,9 +223,9 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_EdgeRadius: 0.02
   m_Points:
-  - {x: -0.5580168, y: -0.48190758}
+  - {x: -0.45586398, y: -0.4829397}
   - {x: -0.99510956, y: 0.2203682}
   - {x: -0.99671173, y: 0.9813719}
   - {x: -0.80470467, y: 1.509541}
@@ -246,8 +247,8 @@ EdgeCollider2D:
   - {x: 1.3915033, y: -1.4915268}
   - {x: 1.3084497, y: -1.6568612}
   - {x: 1.142807, y: -1.8146411}
-  - {x: 1.1792145, y: -2.1143851}
-  - {x: -0.82273865, y: -2.1166391}
+  - {x: 1.1938103, y: -2.029761}
+  - {x: -0.7936236, y: -2.0310905}
   - {x: -0.6267595, y: -1.6376961}
   - {x: -0.6582289, y: -1.4221385}
   - {x: -0.97088814, y: -1.7433957}
@@ -272,6 +273,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &56542146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56542140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 582d91bfe46b2cd4e99d4cc4ef1328be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 5.72
 --- !u!1 &613692395
 GameObject:
   m_ObjectHideFlags: 0
