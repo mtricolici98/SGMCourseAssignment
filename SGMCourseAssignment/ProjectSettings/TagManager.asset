@@ -15,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
-  - fieldLayer
+  - 
   - PlayerLayer
-  - backGroudLayer
+  - fieldLayer
   - 
   - 
   - 
@@ -48,7 +48,4 @@ TagManager:
     locked: 0
   - name: fieldLayer
     uniqueID: 2796879747
-    locked: 0
-  - name: BackGroundLayer
-    uniqueID: 2733964325
     locked: 0
