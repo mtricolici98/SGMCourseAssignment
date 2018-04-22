@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementScript : MonoBehaviour {
 
-    [SerializeField] float speed;
+    private float speed;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private bool rotated;
@@ -13,7 +13,7 @@ public class MovementScript : MonoBehaviour {
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         sr = gameObject.GetComponent<SpriteRenderer>();
-        
+        speed = 7;
     }
 
     // Update is called once per frame
