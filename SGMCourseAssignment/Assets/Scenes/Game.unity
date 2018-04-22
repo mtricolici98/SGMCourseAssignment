@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 56542142}
   - component: {fileID: 56542141}
   - component: {fileID: 56542144}
+  - component: {fileID: 56542145}
   m_Layer: 9
   m_Name: frame-1
   m_TagString: Player1
@@ -254,6 +255,23 @@ EdgeCollider2D:
   - {x: -1.4565096, y: -1.3725424}
   - {x: -1.2042446, y: -0.9596646}
   - {x: -0.45586872, y: -0.4811854}
+--- !u!95 &56542145
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 56542140}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdfd0878c1436b0459ac96c458953de4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &613692395
 GameObject:
   m_ObjectHideFlags: 0
