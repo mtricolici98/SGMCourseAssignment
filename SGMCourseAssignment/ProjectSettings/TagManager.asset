@@ -43,12 +43,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: PlayerLayer
-    uniqueID: 1540106599
+  - name: backGroundLayer
+    uniqueID: 785657037
     locked: 0
-  - name: fieldLayer
-    uniqueID: 2796879747
+  - name: fieldBlack
+    uniqueID: 2565597975
     locked: 0
-  - name: BackGroundLayer
-    uniqueID: 2733964325
+  - name: playerLayer
+    uniqueID: 708323769
     locked: 0
