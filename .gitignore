@@ -32,3 +32,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+SGMCourseAssignment/.vs/SGMCourseAssignment/v15/Server/sqlite3/storage.ide
+SGMCourseAssignment/.vs/SGMCourseAssignment/v15/Server/sqlite3/storage.ide-shm
+SGMCourseAssignment/.vs/SGMCourseAssignment/v15/Server/sqlite3/storage.ide-wal
