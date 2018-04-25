@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58658635291854594}
   m_Layer: 8
   m_Name: Power_template
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
