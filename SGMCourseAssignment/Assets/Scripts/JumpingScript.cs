@@ -23,9 +23,6 @@ public class JumpingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         if (Input.GetKeyDown(KeyCode.W))
         {
 
@@ -34,8 +31,6 @@ public class JumpingScript : MonoBehaviour
                 Invoke("jump", 0f);
                 animator.SetBool("isInAir", true);
             }
-
-
         }
         
     }
@@ -46,7 +41,6 @@ public class JumpingScript : MonoBehaviour
             animator.SetBool("isInAir", false);
             animator.SetBool("isFalling", true);
 
-
         } else if(rb.velocity.y > 0) { 
             animator.SetBool("isInAir", true);
             animator.SetBool("isGoingIdle", false);
@@ -56,8 +50,6 @@ public class JumpingScript : MonoBehaviour
             animator.SetBool("isFalling", false);
             animator.SetBool("isGoingIdle", true);
         }
-      
-
     }
 
     void jump()
