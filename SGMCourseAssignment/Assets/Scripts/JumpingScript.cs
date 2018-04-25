@@ -9,6 +9,7 @@ public class JumpingScript : MonoBehaviour
     private Rigidbody2D rb;
     private int numberOfJumps;
     private Animator animator;
+    private float lastPos;
     // Use this for initialization
     void Start()
     {
@@ -16,24 +17,49 @@ public class JumpingScript : MonoBehaviour
         numberOfJumps = 0;
         force = 6;
         animator = GetComponent<Animator>();
+        lastPos = gameObject.transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
 
+        
+       
         if (Input.GetKeyDown(KeyCode.W))
         {
-            animator.SetBool("isInAir", true);
+          
             if (numberOfJumps < 2)
             {
 
 
                 Invoke("jump", 0f);
 
-            }
+            } 
 
         }
+        lastPos = gameObject.transform.position.y;
+    }
+    void LateUpdate()
+    {
+        if (lastPos < gameObject.transform.position.y)
+        {
+            animator.SetBool("isInAir", true);
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isRunningSlow", false);
+        }
+        if (lastPos > gameObject.transform.position.y)
+        {
+            animator.SetBool("isFalling", true);
+            animator.SetBool("isRunningSlow", false);
+        }
+        if (lastPos == gameObject.transform.position.y)
+        {
+            animator.SetBool("isInAir", false);
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isRunningSlow", true);
+        }
+        
     }
 
     void jump()
@@ -44,10 +70,14 @@ public class JumpingScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+        animator.SetBool("isInAir", false);
+        animator.SetBool("isFalling", false);
+        animator.SetBool("isRunningSlow", true);
         Debug.Log("CollisionHappened");
         if (col.gameObject.tag == "GameField")
         {
             numberOfJumps = 0;
+            
         }
     }
 }
