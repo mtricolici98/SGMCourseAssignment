@@ -21,6 +21,7 @@ public class MovementScript : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
+        
         if (horizontal != 0f)
         {
             animator.SetFloat("speed", speed);

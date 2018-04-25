@@ -68,14 +68,14 @@ public class JumpingScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        animator.SetBool("isInAir", false);
-        animator.SetBool("isFalling", false);
-        animator.SetBool("isGoingIdle", true);
+        
         Debug.Log("CollisionHappened");
         if (col.gameObject.tag == "GameField")
         {
             numberOfJumps = 0;
-
+            animator.SetBool("isInAir", false);
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isGoingIdle", true);
         }
     }
 }
