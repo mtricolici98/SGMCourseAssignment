@@ -33,6 +33,10 @@ public class JumpingScript : MonoBehaviour
             {
                 Invoke("jump", 0f);
                 animator.SetBool("isInAir", true);
+                if (rb.velocity == Vector2.down)
+                {
+                    animator.SetBool("isFalling", true);
+                }
             }
 
 
