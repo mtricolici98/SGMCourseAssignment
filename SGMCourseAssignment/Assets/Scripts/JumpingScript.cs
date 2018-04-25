@@ -46,18 +46,18 @@ public class JumpingScript : MonoBehaviour
         {
             animator.SetBool("isInAir", true);
             animator.SetBool("isFalling", false);
-            animator.SetBool("isRunningSlow", false);
+
         }
         if (lastPos > gameObject.transform.position.y)
         {
             animator.SetBool("isFalling", true);
-            animator.SetBool("isRunningSlow", false);
+
         }
         if (lastPos == gameObject.transform.position.y)
         {
             animator.SetBool("isInAir", false);
             animator.SetBool("isFalling", false);
-            animator.SetBool("isRunningSlow", true);
+
         }
 
     }
@@ -72,7 +72,7 @@ public class JumpingScript : MonoBehaviour
     {
         animator.SetBool("isInAir", false);
         animator.SetBool("isFalling", false);
-        animator.SetBool("isRunningSlow", true);
+
         Debug.Log("CollisionHappened");
         if (col.gameObject.tag == "GameField")
         {
