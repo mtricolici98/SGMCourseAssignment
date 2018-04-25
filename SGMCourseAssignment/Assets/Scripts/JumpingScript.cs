@@ -9,7 +9,7 @@ public class JumpingScript : MonoBehaviour
     private Rigidbody2D rb;
     private int numberOfJumps;
     private Animator animator;
-    private float lastPos;
+   
     // Use this for initialization
     void Start()
     {
@@ -17,7 +17,7 @@ public class JumpingScript : MonoBehaviour
         numberOfJumps = 0;
         force = 6;
         animator = GetComponent<Animator>();
-        lastPos = gameObject.transform.position.y;
+   
     }
 
     // Update is called once per frame
@@ -37,28 +37,26 @@ public class JumpingScript : MonoBehaviour
 
 
         }
-        lastPos = gameObject.transform.position.y;
+        
     }
-    void FixedUpdate()
+    void LateUpdate()
     {
-        if (lastPos < gameObject.transform.position.y)
-        {
-            animator.SetBool("isInAir", true);
-            animator.SetBool("isGoingIdle", false);
-
-        }
-        if (lastPos > gameObject.transform.position.y)
+        if (rb.velocity.y < 0)
         {
             animator.SetBool("isInAir", false);
             animator.SetBool("isFalling", true);
 
-        }
-        if (lastPos == gameObject.transform.position.y)
-        {
-            animator.SetBool("isGoingIdle", true);
-            animator.SetBool("isFalling", false);
 
+        } else if(rb.velocity.y > 0) { 
+            animator.SetBool("isInAir", true);
+            animator.SetBool("isGoingIdle", false);
+
+        } else if(rb.velocity.y == 0)
+        {
+            animator.SetBool("isFalling", false);
+            animator.SetBool("isGoingIdle", true);
         }
+      
 
     }
 
