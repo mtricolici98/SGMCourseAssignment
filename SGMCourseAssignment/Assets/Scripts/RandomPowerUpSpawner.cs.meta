@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 28cfefb2b3c688b4e9afb3caab203a54
+timeCreated: 1524665630
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - powerBubble: {fileID: 1230750657090250, guid: 6b59f9a4816b94042837c6141fd3e860,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
