@@ -29,7 +29,7 @@ public class RandomPowerUpSpawner : MonoBehaviour {
     {
         Vector3 newPos = new Vector3(Random.Range(-15, 15), Random.Range(9  , 10), 0);
         GameObject octo = Instantiate(powerBubble[Random.Range(0,powerBubble.Length-1)], newPos, Quaternion.identity) as GameObject;
-
+        Debug.Log("Spawned"+ octo.name);
     }
 
     private void cleanUp()
