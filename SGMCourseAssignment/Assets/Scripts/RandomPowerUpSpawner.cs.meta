@@ -6,7 +6,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - powerBubble: {fileID: 1230750657090250, guid: 6b59f9a4816b94042837c6141fd3e860,
+  - powerBubble: {fileID: 1539220338331230, guid: 106890aab4299834da31f88bbaaa3b2e,
       type: 2}
   executionOrder: 0
   icon: {instanceID: 0}

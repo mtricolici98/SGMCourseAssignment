@@ -5,7 +5,7 @@ using UnityEngine;
 public class RandomPowerUpSpawner : MonoBehaviour {
 
 
-    [SerializeField]  GameObject powerBubble;
+    [SerializeField]  GameObject[] powerBubble;
 
     private float timeUntilSpawn;
     // Use this for initialization
@@ -28,7 +28,7 @@ public class RandomPowerUpSpawner : MonoBehaviour {
     private void SpawnPowerup()
     {
         Vector3 newPos = new Vector3(Random.Range(-15, 15), Random.Range(9  , 10), 0);
-        GameObject octo = Instantiate(powerBubble, newPos, Quaternion.identity) as GameObject;
+        GameObject octo = Instantiate(powerBubble[Random.Range(0,powerBubble.Length-1)], newPos, Quaternion.identity) as GameObject;
 
     }
 
