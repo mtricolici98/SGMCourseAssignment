@@ -24,16 +24,17 @@ public class JumpingScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            animator.SetBool("isInAir", true);
+
             if (numberOfJumps < 2)
             {
 
-
+                animator.SetBool("isInAir", true);
                 Invoke("jump", 0f);
 
             }
 
         }
+
     }
 
     void jump()
