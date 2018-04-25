@@ -24,18 +24,18 @@ public class JumpingScript : MonoBehaviour
     void Update()
     {
 
-        
-       
+
+
         if (Input.GetKeyDown(KeyCode.W))
         {
-          
+
             if (numberOfJumps < 2)
             {
 
 
                 Invoke("jump", 0f);
 
-            } 
+            }
 
         }
         lastPos = gameObject.transform.position.y;
@@ -59,7 +59,7 @@ public class JumpingScript : MonoBehaviour
             animator.SetBool("isFalling", false);
             animator.SetBool("isRunningSlow", true);
         }
-        
+
     }
 
     void jump()
@@ -77,7 +77,7 @@ public class JumpingScript : MonoBehaviour
         if (col.gameObject.tag == "GameField")
         {
             numberOfJumps = 0;
-            
+
         }
     }
 }
