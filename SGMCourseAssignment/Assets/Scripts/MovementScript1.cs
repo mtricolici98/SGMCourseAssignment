@@ -25,18 +25,18 @@ public class MovementScript1 : MonoBehaviour
         if (horizontal != 0f)
         {
             animator.SetFloat("speed1", speed);
-            if (horizontal < 0f)
+            if (horizontal > 0f)
             {
-                rb.AddForce(transform.right * speed);
+                rb.AddForce(-transform.right * speed);
                 if (rotated == false)
                 {
                     rb.transform.Rotate(0f, 180f, 0f);
                 }
-                rotated = true;
+                rotated =  true;
             }
-            else if (horizontal > 0f)
+            else if (horizontal < 0f)
             {
-                rb.AddForce(transform.right * speed);
+                rb.AddForce(-transform.right * speed);
                 if (rotated == true)
                 {
                     rb.transform.Rotate(0f, 180f, 0f);
