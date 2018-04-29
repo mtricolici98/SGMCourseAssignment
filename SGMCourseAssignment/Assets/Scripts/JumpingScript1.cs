@@ -75,7 +75,7 @@ public class JumpingScript1 : MonoBehaviour
     {
         if (col.gameObject.tag == "GameField")
         {
-            numberOfJumps = 0;
+            numberOfJumps = 1;
         }
 
     }
