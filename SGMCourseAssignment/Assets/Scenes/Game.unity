@@ -1955,12 +1955,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1273517266}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.09, y: -4.23, z: 0}
-  m_LocalScale: {x: 0.61968225, y: 0.84072334, z: 1}
-<<<<<<< HEAD
->>>>>>> parent of e8015a5... Merge branch 'master' of https://github.com/nipfty/SGMCourseAssignment
-=======
->>>>>>> parent of e8015a5... Merge branch 'master' of https://github.com/nipfty/SGMCourseAssignment
+  m_LocalPosition: {x: 16.262, y: -2.83, z: 0}
+  m_LocalScale: {x: 0.61968225, y: 0.53279835, z: 1}
   m_Children:
   - {fileID: 1400918832}
   m_Father: {fileID: 0}
@@ -2432,12 +2428,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1530486404}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -16.19, y: -4.14, z: 0}
-  m_LocalScale: {x: 0.61968225, y: 0.8340293, z: 1}
-<<<<<<< HEAD
->>>>>>> parent of e8015a5... Merge branch 'master' of https://github.com/nipfty/SGMCourseAssignment
-=======
->>>>>>> parent of e8015a5... Merge branch 'master' of https://github.com/nipfty/SGMCourseAssignment
+  m_LocalPosition: {x: -16.19, y: -2.83, z: 0}
+  m_LocalScale: {x: 0.61968225, y: 0.53279835, z: 1}
   m_Children:
   - {fileID: 1308889262}
   m_Father: {fileID: 0}
