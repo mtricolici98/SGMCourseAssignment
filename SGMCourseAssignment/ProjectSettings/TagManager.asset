@@ -9,7 +9,6 @@ TagManager:
   - Player2
   - PowerUp
   - GateP2
-  - GateP1
   layers:
   - Default
   - TransparentFX
