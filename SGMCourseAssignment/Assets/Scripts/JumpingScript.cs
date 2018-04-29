@@ -70,4 +70,13 @@ public class JumpingScript : MonoBehaviour
             animator.SetBool("isGoingIdle", true);
         }
     }
-}
+    void OnCollisionStay2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "GameField")
+        {
+            numberOfJumps = 1;
+        }
+
+    }
+
+    }
