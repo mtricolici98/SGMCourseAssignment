@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-
+    public delegate void Scored();
+    public static event Scored OnScore;
     public static GameManager instance = null;
     //  private BoardManager boardScript;                     
 
@@ -64,12 +65,15 @@ public class GameManager : MonoBehaviour
     {
         player1Score++;
         Debug.Log("Plyaer 1 Score " + player1Score);
+      
+        OnScore();
     }
 
     void ScoreR()
     {
         player2Score++;
         Debug.Log("Plyaer 2 Score " + player2Score);
+        OnScore();
     }
 
 }
