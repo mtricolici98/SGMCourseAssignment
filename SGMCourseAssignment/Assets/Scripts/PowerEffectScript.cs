@@ -52,29 +52,29 @@ public class PowerEffectScript : MonoBehaviour {
         Debug.Log("COLIDED:  "  +col.gameObject.name);
         if(col.gameObject.name == "Grow(Clone)")
         {
-           
+            Destroy(col.gameObject);
             isBig = true;
           
         }
         if (col.gameObject.name == "Freeze(Clone)")
         {
-           
+            Destroy(col.gameObject);
             isFrozen = true;
 
         }
         if (col.gameObject.name == "BiggerGate(Clone)")
         {
-           
+            Destroy(col.gameObject);
             isBiggerGate = true;
 
         }
         if (col.gameObject.name == "SmallerGate(Clone)")
         {
-            
+            Destroy(col.gameObject);
             isSmallerGate = true;
 
         }
-        Destroy(col.gameObject);
+        
     }
 
     void makeBig()
