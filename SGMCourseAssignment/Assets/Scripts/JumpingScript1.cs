@@ -9,7 +9,7 @@ public class JumpingScript1 : MonoBehaviour
     private Rigidbody2D rb;
     private int numberOfJumps;
     private Animator animator;
-   
+
     // Use this for initialization
     void Start()
     {
@@ -17,7 +17,7 @@ public class JumpingScript1 : MonoBehaviour
         numberOfJumps = 0;
         force = 6;
         animator = GetComponent<Animator>();
-   
+
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class JumpingScript1 : MonoBehaviour
                 animator.SetBool("isInAir", true);
             }
         }
-        
+
     }
     void LateUpdate()
     {
@@ -41,11 +41,11 @@ public class JumpingScript1 : MonoBehaviour
             animator.SetBool("isInAir", false);
             animator.SetBool("isFalling", true);
 
-        } else if(rb.velocity.y > 0) { 
+        } else if (rb.velocity.y > 0) {
             animator.SetBool("isInAir", true);
             animator.SetBool("isGoingIdle", false);
 
-        } else if(rb.velocity.y == 0)
+        } else if (rb.velocity.y == 0)
         {
             animator.SetBool("isFalling", false);
             animator.SetBool("isGoingIdle", true);
@@ -60,7 +60,7 @@ public class JumpingScript1 : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        
+
         Debug.Log("CollisionHappened");
         if (col.gameObject.tag == "GameField")
         {
@@ -68,6 +68,9 @@ public class JumpingScript1 : MonoBehaviour
             animator.SetBool("isInAir", false);
             animator.SetBool("isFalling", false);
             animator.SetBool("isGoingIdle", true);
+        } else if (col.gameObject.tag == "Player1" || col.gameObject.tag == "Player2")
+        {
+            numberOfJumps = 1;
         }
     }
 

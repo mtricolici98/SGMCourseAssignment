@@ -69,6 +69,10 @@ public class JumpingScript : MonoBehaviour
             animator.SetBool("isFalling", false);
             animator.SetBool("isGoingIdle", true);
         }
+        else if (col.gameObject.tag == "Player1" || col.gameObject.tag == "Player2")
+        {
+            numberOfJumps = 1;
+        }
     }
     void OnCollisionStay2D(Collision2D col)
     {

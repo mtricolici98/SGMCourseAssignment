@@ -837,6 +837,7 @@ GameObject:
   - component: {fileID: 613692397}
   - component: {fileID: 613692396}
   - component: {fileID: 613692400}
+  - component: {fileID: 613692401}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -866,8 +867,8 @@ Camera:
   m_GameObject: {fileID: 613692395}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -878,7 +879,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.794784
+  orthographic size: 7.86
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -987,6 +988,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &613692401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 613692395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55fbdb21b8b46c4db2469190a001345, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orthographicSize: 5
+  aspect: 0
 --- !u!1 &628082181 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1082779270037488, guid: c552c7d7fe709a64683c7e8923ac7893,
