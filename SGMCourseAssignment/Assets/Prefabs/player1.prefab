@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114981674645331814}
   - component: {fileID: 114548615261706496}
   - component: {fileID: 114994799002109438}
+  - component: {fileID: 114806589237602936}
   m_Layer: 9
   m_Name: player1
   m_TagString: Player1
@@ -181,6 +182,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &114806589237602936
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1390347120858438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a8ef3e367287e3428af05c29021e372, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114981674645331814
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,13 +210,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1390347120858438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42fdfa915ec3cf94e81b29daef313fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftGate: {fileID: 1399860056104930, guid: cfba065d6dcba4244b6ce8f02b5b63dd, type: 2}
-  rightGate: {fileID: 1621197415877822, guid: 5e77b0c2d1687a746b4192f6390c5042, type: 2}
+  leftGate: {fileID: 0}
+  rightGate: {fileID: 0}
+  gateControlPu: {fileID: 0}
 --- !u!212 &212288702898191830
 SpriteRenderer:
   m_ObjectHideFlags: 1
