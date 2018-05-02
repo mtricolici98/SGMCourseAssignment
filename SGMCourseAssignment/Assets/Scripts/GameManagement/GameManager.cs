@@ -91,6 +91,8 @@ public class GameManager : MonoBehaviour
         p1.transform.position = initPosP1;
         p2.transform.position = initPosP2;
         ball.transform.position = initPosBall;
+        ball.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
+        ball.GetComponent<Rigidbody2D>().angularVelocity = 0f;
     }
 
 }
