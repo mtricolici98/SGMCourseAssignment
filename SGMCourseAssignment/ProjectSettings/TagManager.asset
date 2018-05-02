@@ -10,6 +10,7 @@ TagManager:
   - PowerUp
   - GateP2
   - GateP1
+  - ball
   layers:
   - Default
   - TransparentFX
