@@ -62,12 +62,14 @@ public class GameManager : MonoBehaviour
 
     void ScoreL()
     {
-
+        player1Score++;
+        Debug.Log("Plyaer 1 Score " + player1Score);
     }
 
     void ScoreR()
     {
-
+        player2Score++;
+        Debug.Log("Plyaer 2 Score " + player2Score);
     }
 
 }

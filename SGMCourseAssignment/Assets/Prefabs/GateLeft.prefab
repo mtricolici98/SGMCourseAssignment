@@ -67,6 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4218318122815582}
   - component: {fileID: 61792438438556250}
+  - component: {fileID: 114364788514490430}
   m_Layer: 9
   m_Name: GoalTriggerLeft
   m_TagString: GateP1
@@ -125,8 +126,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1184353438227466}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.629868, y: 0, z: 0}
-  m_LocalScale: {x: 0.14725289, y: 0.55484617, z: 1}
+  m_LocalPosition: {x: -1.23, y: 0, z: 0}
+  m_LocalScale: {x: 0.14725289, y: 0.52710384, z: 1}
   m_Children: []
   m_Father: {fileID: 4665130869910060}
   m_RootOrder: 0
@@ -234,6 +235,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4632778, y: 15.361779}
   m_EdgeRadius: 0
+--- !u!114 &114364788514490430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1184353438227466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acefa416bb7b5f408e2a68583105464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212634456319479406
 SpriteRenderer:
   m_ObjectHideFlags: 1

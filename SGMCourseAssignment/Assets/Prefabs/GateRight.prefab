@@ -67,6 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4948902184479314}
   - component: {fileID: 61655097666575216}
+  - component: {fileID: 114338204210575246}
   m_Layer: 9
   m_Name: GoalTriggerRight
   m_TagString: GateP2
@@ -139,7 +140,7 @@ Transform:
   m_GameObject: {fileID: 1701552384341240}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: -1.31, y: 0, z: 0}
-  m_LocalScale: {x: 0.14725289, y: 0.55484295, z: 1}
+  m_LocalScale: {x: 0.14725289, y: 0.5271009, z: 1}
   m_Children: []
   m_Father: {fileID: 4711339710758358}
   m_RootOrder: 0
@@ -234,6 +235,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4632778, y: 15.361779}
   m_EdgeRadius: 0
+--- !u!114 &114338204210575246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701552384341240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0acefa416bb7b5f408e2a68583105464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212314605373241748
 SpriteRenderer:
   m_ObjectHideFlags: 1

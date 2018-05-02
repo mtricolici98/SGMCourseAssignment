@@ -7,13 +7,13 @@ public class MovementScript1 : MonoBehaviour
     [SerializeField] private float speed;
     private Animator animator;
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
+ 
     private bool rotated;
     // Use this for initialization
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
-        sr = gameObject.GetComponent<SpriteRenderer>();
+      
         animator = GetComponent<Animator>();
     }
 
