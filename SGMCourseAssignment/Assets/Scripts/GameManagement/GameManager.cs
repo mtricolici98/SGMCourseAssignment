@@ -4,10 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public delegate void Scored();
-    public static event Scored OnScore;
+    // public delegate void Scored();
+    // public static event Scored OnScore;
     public static GameManager instance = null;
-    //  private BoardManager boardScript;                     
+    private Vector2 initPosP1;
+    private Vector2 initPosP2;
+    private Vector2 initPosBall;
+    public GameObject p1;
+    public GameObject p2;
+    public GameObject ball;
+    float restartDelay = 1f;                   
 
     private int player1Score;
     private int player2Score;
@@ -39,7 +45,10 @@ public class GameManager : MonoBehaviour
         //  boardScript.SetupScene(level);
         player1Score = 0;
         player2Score = 0;
-    }
+        initPosP1 =  p1.transform.position;
+        initPosP2 =  p2.transform.position;
+        initPosBall = ball.transform.position;
+           }
 
 
 
@@ -61,19 +70,26 @@ public class GameManager : MonoBehaviour
         ScoreManager.OnScoreR -= ScoreR;
     }
 
-    void ScoreL()
+    public void ScoreL()
     {
         player1Score++;
-        Debug.Log("Plyaer 1 Score " + player1Score);
-      
-        OnScore();
+        Debug.Log("Player 1 Score " + player1Score);
+        //OnScore();
+        Invoke("Restart", restartDelay);
     }
 
-    void ScoreR()
+    public void ScoreR()
     {
         player2Score++;
-        Debug.Log("Plyaer 2 Score " + player2Score);
-        OnScore();
+        Debug.Log("Player 2 Score " + player2Score);
+        //OnScore();
+        Invoke("Restart", restartDelay);
+    }
+
+    void Restart(){
+        p1.transform.position = initPosP1;
+        p2.transform.position = initPosP2;
+        ball.transform.position = initPosBall;
     }
 
 }

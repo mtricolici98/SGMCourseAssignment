@@ -24,10 +24,12 @@ public class ScoreManager : MonoBehaviour {
         {
             if (gameObject.tag == "GateP1")
             {
-                OnScoreL();
+                OnScoreR();
+                FindObjectOfType<GameManager>().ScoreR();
             } else if (gameObject.tag == "GateP2")
             {
-                OnScoreR();
+                OnScoreL();
+                FindObjectOfType<GameManager>().ScoreL();
             }
         } 
     }
