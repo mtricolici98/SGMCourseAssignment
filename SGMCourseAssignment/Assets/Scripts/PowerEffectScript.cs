@@ -14,6 +14,7 @@ public class PowerEffectScript : MonoBehaviour {
     private Vector2 LinitScale;
     private Vector2 LinitPos;
     private Vector2 RinitScale;
+    private Animator animator;
     private Vector2 RinitPos;
     // Use this for initialization
     void Start () {
@@ -24,6 +25,7 @@ public class PowerEffectScript : MonoBehaviour {
         isBig = isFrozen = isBiggerGate = isSmallerGate = false;
         originalScale = gameObject.transform.localScale;
         rb = GetComponent<Rigidbody2D>();
+        animator=GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -98,7 +100,7 @@ public class PowerEffectScript : MonoBehaviour {
     void freeze()
     {
         rb.mass = 10000000000f;
-        
+        animator.Play("dizzy");
     }
     void unFreeze()
     {
