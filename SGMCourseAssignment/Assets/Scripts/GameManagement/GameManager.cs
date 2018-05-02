@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject p1;
     public GameObject p2;
     public GameObject ball;
-    float restartDelay = 1.5f;                   
+    float restartDelay = 0f;                   
 
     private int player1Score;
     private int player2Score;
@@ -81,8 +81,9 @@ public class GameManager : MonoBehaviour
     public void ScoreR()
     {
         player2Score++;
+
         Debug.Log("Player 2 Score " + player2Score);
-        //OnScore();
+        
         Invoke("Restart", restartDelay);
     }
 
