@@ -167,6 +167,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114452448890491416, guid: 7f41e02afdd7a574aa0c739a73305d03,
+        type: 2}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 628082181}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f41e02afdd7a574aa0c739a73305d03, type: 2}
   m_IsPrefabParent: 0
@@ -227,6 +232,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f84efba080f3494e8d0f13fe8976d5d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &176582656 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1390347120858438, guid: 7f84efba080f3494e8d0f13fe8976d5d,
+    type: 2}
+  m_PrefabInternal: {fileID: 164932323}
 --- !u!1001 &311637804
 Prefab:
   m_ObjectHideFlags: 0
@@ -748,6 +758,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38382a89757dc7b4b875a47d87d3b0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  p1: {fileID: 176582656}
+  p2: {fileID: 1378035369}
+  ball: {fileID: 628082181}
 --- !u!1 &613692395
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +923,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!1 &628082181 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1082779270037488, guid: c552c7d7fe709a64683c7e8923ac7893,
+    type: 2}
+  m_PrefabInternal: {fileID: 637949762}
 --- !u!1001 &637949762
 Prefab:
   m_ObjectHideFlags: 0
@@ -1384,6 +1402,11 @@ GameObject:
   m_PrefabParentObject: {fileID: 1621197415877822, guid: 5e77b0c2d1687a746b4192f6390c5042,
     type: 2}
   m_PrefabInternal: {fileID: 1999706002}
+--- !u!1 &1378035369 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1985969766530262, guid: 7f41e02afdd7a574aa0c739a73305d03,
+    type: 2}
+  m_PrefabInternal: {fileID: 41273302}
 --- !u!1 &1427821996
 GameObject:
   m_ObjectHideFlags: 0

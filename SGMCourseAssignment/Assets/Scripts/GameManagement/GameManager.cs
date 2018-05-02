@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject p1;
     public GameObject p2;
     public GameObject ball;
-    float restartDelay = 1f;                   
+    float restartDelay = 1.5f;                   
 
     private int player1Score;
     private int player2Score;

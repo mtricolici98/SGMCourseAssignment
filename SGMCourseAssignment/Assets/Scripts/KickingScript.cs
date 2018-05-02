@@ -19,9 +19,6 @@ public GameObject ball;
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-         
-	}
 
 		if(Input.GetKeyDown(KeyCode.LeftShift)){
 			animator.Play("kicking",-1,0f);
@@ -30,7 +27,7 @@ public GameObject ball;
             // Debug.Log("Transform right " + transform.right);
             //  Debug.DrawLine(transform.position + transform.right, transform.right, Color.red, 10f);
             Debug.Log("Raycasted with  " + hit.collider.gameObject.tag);
-            if (hit.collider.gameObject.tag == "ball" && hit.distance < 1f)
+            if (hit.collider.gameObject.tag == "ball" && hit.distance < 1.5f)
             {
                 //Debug.Log("Distance : " + hit.distance);
                 //Debug.Log("RayCasted with  " + hit);
