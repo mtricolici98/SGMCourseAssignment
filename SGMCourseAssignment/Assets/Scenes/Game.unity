@@ -172,6 +172,11 @@ Prefab:
       propertyPath: ball
       value: 
       objectReference: {fileID: 628082181}
+    - target: {fileID: 114421622358342262, guid: 7f41e02afdd7a574aa0c739a73305d03,
+        type: 2}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f41e02afdd7a574aa0c739a73305d03, type: 2}
   m_IsPrefabParent: 0
