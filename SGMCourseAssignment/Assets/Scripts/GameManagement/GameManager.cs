@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     public GameObject p1;
     public GameObject p2;
     public GameObject ball;
-    float restartDelay = 0f;                   
+    //public GameObject text;
+    float restartDelay = 0.5f;                   
 
     private int player1Score;
     private int player2Score;
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         initPosP1 =  p1.transform.position;
         initPosP2 =  p2.transform.position;
         initPosBall = ball.transform.position;
+        
            }
 
 

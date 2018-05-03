@@ -31,7 +31,8 @@ public class EndGame : MonoBehaviour {
 		gameEnded = true;
 	}
 	public void NewGameButton(){
-		SceneManager.LoadScene("Game");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		notEnded();
 	}
 
 	public void QuitButton(){
