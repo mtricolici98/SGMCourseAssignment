@@ -21,7 +21,7 @@ public class MovementScript1 : MonoBehaviour
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal1");
-        
+        /* 
         if (horizontal != 0f)
         {
             animator.SetFloat("speed1", speed);
@@ -50,9 +50,38 @@ public class MovementScript1 : MonoBehaviour
         else
         {
             animator.SetFloat("speed1", 0);
-        }
+        }*/
         // rb.AddForce(transform.right * speed * horizontal);
+        
+        if (horizontal != 0f)
+        {
+            animator.SetFloat("speed", speed);
+            if (horizontal < 0f)
+            {
+                rb.AddForce(transform.right * speed);
+                if (rotated == false)
+                {
+                    rb.transform.Rotate(0f, 180f, 0f);
+                }
+                rotated = true;
+            }
+            else if (horizontal > 0f)
+            {
+                rb.AddForce(transform.right * speed);
+                if (rotated == true)
+                {
+                    rb.transform.Rotate(0f, 180f, 0f);
+                }
+                rotated = false;
+            }
 
+
+
+        }
+        else
+        {
+            animator.SetFloat("speed", 0);
+        }
 
 
     }
