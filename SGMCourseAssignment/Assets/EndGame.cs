@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour {
 
@@ -23,12 +24,18 @@ public class EndGame : MonoBehaviour {
 
 	public void notEnded(){
 		gameEndedUI.SetActive(false);
-		Time.timeScale = 1f;
 		gameEnded = false;
 	}
 	void Ended(){
 		gameEndedUI.SetActive(true);
-		Time.timeScale = 0f;
 		gameEnded = true;
+	}
+	public void NewGameButton(){
+		SceneManager.LoadScene("Game");
+	}
+
+	public void QuitButton(){
+		Application.Quit();
+		Debug.Log("Quitting game...");
 	}
 }
