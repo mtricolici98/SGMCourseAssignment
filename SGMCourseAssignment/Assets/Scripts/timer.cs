@@ -6,25 +6,35 @@ using UnityEngine.UI;
 public class timer : MonoBehaviour {
 
 	public Text timerText;
-	private float startTime;
-	private bool finnished = false;
+	public int timeLeft = 180;
+
+
+
 
 	// Use this for initialization
 	void Start () {
-		startTime = Time.time;
+		StartCoroutine ("LoseTime");
 		
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
-		if (finnished)
-			return;
-		float t = Time.time - startTime;
-		string minutes = ((int)t / 60).ToString();
-		string seconds = (t % 60).ToString ("f2");
+		timerText.text = (timeLeft/60 + ":" + timeLeft%60 );
 
-		timerText.text = minutes + ":" + seconds;
-
+		if (timeLeft <= 0) {
+			StopCoroutine ("LoseTime");
+			timerText.text = "Times Up!";
+		}
 		
+	}
+
+
+	IEnumerator LoseTime(){
+
+		while (true) {
+			yield return new WaitForSeconds (1);
+			timeLeft--;
+		}
 	}
 }
