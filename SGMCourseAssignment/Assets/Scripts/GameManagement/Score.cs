@@ -28,18 +28,20 @@ public class Score : MonoBehaviour {
 	{
 		ScoreManager.OnScoreL += ScoreL;
 		ScoreManager.OnScoreR += ScoreR;
-	} 
+        EndGame.onNewGame += Reset;
+    } 
 
 	void OnDisable()
 	{
 		ScoreManager.OnScoreL -= ScoreL;
 		ScoreManager.OnScoreR -= ScoreR;
-	}
+        EndGame.onNewGame -= Reset;
+    }
 
 	public void ScoreL()
 	{
 		leftOneScore++;
-		Update ();
+	//	Update ();
 
 
 	}
@@ -47,16 +49,22 @@ public class Score : MonoBehaviour {
 	public void ScoreR()
 	{
 		rightOneScore++;
-		Update ();
+	//	Update ();
 
 
 	}
 
+    void Reset()
+    {
+ 
+        leftOneScore = 0;
+        rightOneScore = 0;
+    }
 
-	
-	// Update is called once per frame
 
-	//	text.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
+    // Update is called once per frame
+
+    //	text.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
 
 
 }

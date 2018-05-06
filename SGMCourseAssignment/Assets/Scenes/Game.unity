@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4145642790862224, guid: 7f41e02afdd7a574aa0c739a73305d03, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 9
+      value: 8.71
       objectReference: {fileID: 0}
     - target: {fileID: 4145642790862224, guid: 7f41e02afdd7a574aa0c739a73305d03, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.61
+      value: -2.86
       objectReference: {fileID: 0}
     - target: {fileID: 4145642790862224, guid: 7f41e02afdd7a574aa0c739a73305d03, type: 2}
       propertyPath: m_LocalPosition.z
@@ -193,11 +193,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4747884304957212, guid: 7f84efba080f3494e8d0f13fe8976d5d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -9.01
+      value: -9.2
       objectReference: {fileID: 0}
     - target: {fileID: 4747884304957212, guid: 7f84efba080f3494e8d0f13fe8976d5d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.78
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 4747884304957212, guid: 7f84efba080f3494e8d0f13fe8976d5d, type: 2}
       propertyPath: m_LocalPosition.z
@@ -881,6 +881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 1656346466}
+  initTime: 180
   timeLeft: 180
 --- !u!1 &613692395
 GameObject:
@@ -1072,11 +1073,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4857055478842530, guid: c552c7d7fe709a64683c7e8923ac7893, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.09
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4857055478842530, guid: c552c7d7fe709a64683c7e8923ac7893, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.39
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 4857055478842530, guid: c552c7d7fe709a64683c7e8923ac7893, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2237,7 +2238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 52, y: 102}
+  m_AnchoredPosition: {x: 68.9, y: 102}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656346466

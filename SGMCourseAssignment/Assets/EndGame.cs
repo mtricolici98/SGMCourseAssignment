@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour {
-
-	public static bool gameEnded = false;
-	public GameObject gameEndedUI;
+    public delegate void NewGame();
+    public static event NewGame onNewGame;
+    [HideInInspector]    public GameObject gameEndedUI;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,25 +15,31 @@ public class EndGame : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(FindObjectOfType<timer>().timeLeft <= 0){
-			Ended();
+            Invoke("Ended", 0f);
 		}	
 		else{
-			notEnded();
+            Invoke("notEnded", 0f);
+         
 		}
 	}
 
 	public void notEnded(){
 		gameEndedUI.SetActive(false);
-		gameEnded = false;
+       
+		
 	}
 	void Ended(){
 		gameEndedUI.SetActive(true);
-		gameEnded = true;
+		
 	}
 	public void NewGameButton(){
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-		notEnded();
-	}
+        
+        FindObjectOfType<timer>().ResetTimer();
+        Invoke("notEnded", 0f);
+        // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        onNewGame();
+        Debug.Log("NewGame");
+    }
 
 	public void QuitButton(){
 		Application.Quit();
