@@ -6,23 +6,24 @@ using UnityEngine.UI;
 public class timer : MonoBehaviour {
 
 	public Text timerText;
-	public int timeLeft = 180;
-
+	public int initTime = 180;
+    public int timeLeft;
 
 
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine ("LoseTime");
-		
+        timeLeft = initTime;
+        StartCoroutine ("LoseTime");
+       
 	}
 
 	
 	// Update is called once per frame
 	void Update () {
 		timerText.text = (timeLeft/60 + ":" + timeLeft%60 );
-
-		if (timeLeft <= 0) {
+       
+        if (timeLeft <= 0) {
 			StopCoroutine ("LoseTime");
 			timerText.text = "Times Up!";
 		}
@@ -37,4 +38,11 @@ public class timer : MonoBehaviour {
 			timeLeft--;
 		}
 	}
+
+    public void ResetTimer()
+    {
+      
+        timeLeft = initTime;
+        StartCoroutine("LoseTime");
+    }
 }

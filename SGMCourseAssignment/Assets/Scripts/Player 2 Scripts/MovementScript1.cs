@@ -55,7 +55,7 @@ public class MovementScript1 : MonoBehaviour
         
         if (horizontal != 0f)
         {
-            animator.SetFloat("speed", speed);
+            animator.SetFloat("speed1", speed);
             if (horizontal < 0f)
             {
                 rb.AddForce(transform.right * speed);
@@ -80,7 +80,7 @@ public class MovementScript1 : MonoBehaviour
         }
         else
         {
-            animator.SetFloat("speed", 0);
+            animator.SetFloat("speed1", 0);
         }
 
 

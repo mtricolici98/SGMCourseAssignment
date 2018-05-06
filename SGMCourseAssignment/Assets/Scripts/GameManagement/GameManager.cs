@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     // public delegate void Scored();
     // public static event Scored OnScore;
+    
     public static GameManager instance = null;
     private Vector2 initPosP1;
     private Vector2 initPosP2;
@@ -64,12 +65,14 @@ public class GameManager : MonoBehaviour
     {
         ScoreManager.OnScoreL += ScoreL;
         ScoreManager.OnScoreR += ScoreR;
+        EndGame.onNewGame += Reset;
     } 
 
     void OnDisable()
     {
         ScoreManager.OnScoreL -= ScoreL;
         ScoreManager.OnScoreR -= ScoreR;
+        EndGame.onNewGame -= Reset;
     }
 
     public void ScoreL()
@@ -95,6 +98,18 @@ public class GameManager : MonoBehaviour
         ball.transform.position = initPosBall;
         ball.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,0f);
         ball.GetComponent<Rigidbody2D>().angularVelocity = 0f;
+        p1.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+        p2.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+   
     }
+
+    void Reset()
+    {
+        Restart();
+        player1Score = 0;
+        player2Score = 0;
+    }
+
+    
 
 }
