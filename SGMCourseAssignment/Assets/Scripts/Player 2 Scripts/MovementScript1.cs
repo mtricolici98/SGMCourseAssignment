@@ -28,6 +28,7 @@ public class MovementScript1 : MonoBehaviour
             if (horizontal < 0f)
             {
                 rb.AddForce(transform.right * speed);
+                // transform.Translate(Vector2.right*speed * Time.deltaTime);
                 if (rotated == false)
                 {
                     rb.transform.Rotate(0f, 180f, 0f);
@@ -37,6 +38,7 @@ public class MovementScript1 : MonoBehaviour
             else if (horizontal > 0f)
             {
                 rb.AddForce(transform.right * speed);
+                // transform.Translate(Vector2.right*speed*Time.deltaTime);
                 if (rotated == true)
                 {
                     rb.transform.Rotate(0f, 180f, 0f);
