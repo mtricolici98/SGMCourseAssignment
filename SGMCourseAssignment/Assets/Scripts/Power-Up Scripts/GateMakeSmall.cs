@@ -18,11 +18,6 @@ public class GateMakeSmall : MonoBehaviour {
         Invoke("NormalGate", 5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     
 

@@ -18,10 +18,6 @@ public class GateMakeBig : MonoBehaviour {
         Invoke("NormalGate", 5f);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
 
     void BigGate()
