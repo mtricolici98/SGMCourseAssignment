@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
-	public delegate void ScoredL();
-	public static event ScoredL OnScoreL;
-	public delegate void ScoredR();
-	public static event ScoredR OnScoreR;
+	//public delegate void ScoredL();
+	//public static event ScoredL OnScoreL;
+	//public delegate void ScoredR();
+	//public static event ScoredR OnScoreR;
 	private int leftOneScore=0;
 	private int rightOneScore=0;
 	public GameObject ball;

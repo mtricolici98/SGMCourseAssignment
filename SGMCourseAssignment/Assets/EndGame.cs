@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class EndGame : MonoBehaviour {
     public delegate void NewGame();
     public static event NewGame onNewGame;
+    public delegate void ResetTimer();
+    public static event ResetTimer resetTimer;
     [HideInInspector]    public GameObject gameEndedUI;
 	// Use this for initialization
 	void Start () {
@@ -33,8 +35,8 @@ public class EndGame : MonoBehaviour {
 		
 	}
 	public void NewGameButton(){
-        
-        FindObjectOfType<timer>().ResetTimer();
+
+        resetTimer();
         Invoke("notEnded", 0f);
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         onNewGame();
