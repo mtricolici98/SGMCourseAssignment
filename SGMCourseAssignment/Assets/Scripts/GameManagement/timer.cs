@@ -18,9 +18,17 @@ public class timer : MonoBehaviour {
        
 	}
 
-	
-	// Update is called once per frame
-	void Update () {
+    void OnEnable()
+    {
+        EndGame.resetTimer += ResetTimer;
+    }
+
+    void OnDisable()
+    {
+       EndGame.resetTimer -= ResetTimer;
+    }
+    // Update is called once per frame
+    void Update () {
 		timerText.text = (timeLeft/60 + ":" + timeLeft%60 );
        
         if (timeLeft <= 0) {
