@@ -37,9 +37,10 @@ public class EndGame : MonoBehaviour {
 	public void NewGameButton(){
 
         resetTimer();
-        Invoke("notEnded", 0f);
+    
         // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         onNewGame();
+		Invoke("notEnded", 0f);
         Debug.Log("NewGame");
     }
 
