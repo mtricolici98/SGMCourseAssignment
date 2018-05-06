@@ -11,7 +11,7 @@ public class MuteUnmut : MonoBehaviour {
 	public Text buttonText;
 
 	void Start(){
-		buttonText = transform.FindChild ("Text").GetComponent<Text> ();
+		buttonText = transform.Find ("Text").GetComponent<Text> ();
 	}
 
 
