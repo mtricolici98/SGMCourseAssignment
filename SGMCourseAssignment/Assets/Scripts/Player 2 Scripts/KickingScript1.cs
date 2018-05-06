@@ -23,7 +23,7 @@ public GameObject ball;
 		if(Input.GetKeyDown(KeyCode.RightShift)){
 			animator.Play("kicking_anim",-1,0f);
             // Debug.Log("Space Hit");
-            hit = Physics2D.Raycast(transform.position + transform.right*(-1), -transform.right);
+            hit = Physics2D.Raycast(transform.position + transform.right, transform.right);
             // Debug.Log("Transform right " + transform.right);
             //  Debug.DrawLine(transform.position + transform.right, transform.right, Color.red, 10f);
             Debug.Log("Raycasted with  " + hit.collider.gameObject.tag);
