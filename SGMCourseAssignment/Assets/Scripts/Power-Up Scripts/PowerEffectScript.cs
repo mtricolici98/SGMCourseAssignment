@@ -35,12 +35,12 @@ public class PowerEffectScript : MonoBehaviour {
         if (isBiggerGate)
         {
             Invoke("BigGate", 0f);
-          //  Invoke("NormalGate", 5f);
+          
         }
         if (isSmallerGate)
         {
             Invoke("SmallGate", 0f);
-           // Invoke("NormalGate", 5f);
+          
         }
 
     }

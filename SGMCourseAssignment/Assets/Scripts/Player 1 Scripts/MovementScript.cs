@@ -51,7 +51,7 @@ public class MovementScript : MonoBehaviour
         {
             animator.SetFloat("speed", 0);
         }
-        // rb.AddForce(transform.right * speed * horizontal);
+      
 
 
 

@@ -9,15 +9,7 @@ public class ScoreManager : MonoBehaviour {
     public static event ScoredL OnScoreL;
     public delegate void ScoredR();
     public static event ScoredR OnScoreR;
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+  
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "ball")

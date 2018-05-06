@@ -15,12 +15,6 @@ public class Score : MonoBehaviour {
 	public Text text;
 	public Text text2;
 
-	// Use this for initialization
-	void Start () {
-
-
-		
-	}
 	void Update () {
 		text.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
 		text2.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
