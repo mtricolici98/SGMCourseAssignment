@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class Score : MonoBehaviour {
 	public delegate void ScoredL();
@@ -14,6 +13,7 @@ public class Score : MonoBehaviour {
 	public GameObject ball;
 
 	public Text text;
+	public Text text2;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +23,7 @@ public class Score : MonoBehaviour {
 	}
 	void Update () {
 		text.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
+		text2.text = leftOneScore.ToString () + " - " + rightOneScore.ToString ();
 	}
 	void OnEnable()
 	{
@@ -56,7 +57,6 @@ public class Score : MonoBehaviour {
 
     void Reset()
     {
- 
         leftOneScore = 0;
         rightOneScore = 0;
     }
